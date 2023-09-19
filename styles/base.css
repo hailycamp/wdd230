@@ -39,7 +39,14 @@ nav a {
 }
 
 nav a:hover {
-    color: #e2a4a1;
+    color: #f2bba4;
+}
+
+main hr {
+    background-color: #CE5953;
+    height: 1px;
+    width: 1000px;
+    border: none;
 }
 
 section {
@@ -55,11 +62,17 @@ section {
 
 section h3 {
     font-size: 1.3em;
+    background-color: #f2bba4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    border-radius: 4px;
 }
 
 section a {
     color: #826251;
     text-decoration: none;
+    margin-top: 0px;
 }
 
 section a:hover {
