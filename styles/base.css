@@ -1,18 +1,21 @@
-/* pick colors & fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* 826251 raw umber */
 
 body {
-    width: 100%;
+    width: 100vw;
     padding: 0.5rem;
+    font-family: 'Lora', serif;
+    background-color: #ffe8d1;
 }
 
 main {
     max-width: 2000px;
-    margin: -20px;
     padding: 50px;
-    background-color: #ffe8d1;
+    margin: auto;
     color: #343434;
     text-align: center;
     display: block;
+    align-content: center;
 }
 
 header, nav {
@@ -22,6 +25,10 @@ header, nav {
     margin: -20px;
     padding: 50px;
     color: #ffe8d1;
+}
+
+img {
+    width: 175px;
 }
 
 nav a {
@@ -35,6 +42,48 @@ nav a:hover {
     color: #e2a4a1;
 }
 
+section {
+    border: #343434;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 800px;
+}
+
+section h3 {
+    font-size: 1.3em;
+}
+
+section a {
+    color: #826251;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #CE5953;
+}
+
+section a:visited {
+    color: #826251;
+    text-decoration: none;
+}
+
+section a:visited:hover {
+    color: #CE5953;
+}
+
 ul {
     list-style: none;
+}
+
+footer {
+    background-color: #CE5953;
+    width: 100vw;
+    margin: -20px;
+    text-align: center;
+    padding: 10px;
+    display: block;
 }
