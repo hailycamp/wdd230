@@ -1,4 +1,40 @@
+/* pick colors & fonts */
+
+body {
+    width: 100%;
+    padding: 0.5rem;
+}
+
 main {
     max-width: 2000px;
-    margin: auto;
+    margin: -20px;
+    padding: 50px;
+    background-color: #ffe8d1;
+    color: #343434;
+    text-align: center;
+    display: block;
+}
+
+header, nav {
+    background-color: #7a8450;
+    text-align: center;
+    display: block;
+    margin: -20px;
+    padding: 50px;
+    color: #ffe8d1;
+}
+
+nav a {
+    color: #ffe8d1;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #e2a4a1;
+}
+
+ul {
+    list-style: none;
 }
