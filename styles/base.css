@@ -31,14 +31,18 @@ header, nav {
     color: #ffe8d1;
 }
 
+h1 {
+    font-size: 1.8em;
+}
+
 img {
-    width: 175px;
+    width: 125px;
 }
 
 nav a {
     color: #ffe8d1;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding: 10px;
 }
 
@@ -56,6 +60,7 @@ main hr {
 h2 {
     grid-row: 1;
     grid-column: 1 / 4;
+    font-size: 1.3em;
 }
 
 .card {
@@ -71,7 +76,7 @@ h2 {
 }
 
 .card h3 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     background-color: #f2bba4;
     padding-top: 10px;
     padding-bottom: 10px;
