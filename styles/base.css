@@ -12,9 +12,13 @@ main {
     max-width: 2000px;
     padding: 50px;
     margin: auto;
+    margin-bottom: 40px;
     color: #343434;
     text-align: center;
-    display: block;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: auto 1000px auto;
     align-content: center;
 }
 
@@ -49,18 +53,24 @@ main hr {
     border: none;
 }
 
-section {
+h2 {
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+
+.card {
     border: #343434;
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
-    margin: auto;
+    grid-column: 2/3;
+    /* margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
-    width: 800px;
+    width: 800px; */
 }
 
-section h3 {
+.card h3 {
     font-size: 1.3em;
     background-color: #f2bba4;
     padding-top: 10px;
@@ -69,22 +79,22 @@ section h3 {
     border-radius: 4px;
 }
 
-section a {
+.card a {
     color: #826251;
     text-decoration: none;
     margin-top: 0px;
 }
 
-section a:hover {
+.card a:hover {
     color: #CE5953;
 }
 
-section a:visited {
+.card a:visited {
     color: #826251;
     text-decoration: none;
 }
 
-section a:visited:hover {
+.card a:visited:hover {
     color: #CE5953;
 }
 
@@ -93,7 +103,8 @@ ul {
 }
 
 footer {
-    background-color: #CE5953;
+    background-color: #97443b;
+    color: #ffe8d1;
     width: 100vw;
     margin: -20px;
     text-align: center;
