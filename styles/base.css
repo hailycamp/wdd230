@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-/* 826251 raw umber */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 body {
     width: 100vw;
@@ -9,17 +9,18 @@ body {
 }
 
 main {
-    max-width: 2000px;
+    max-width: 1000px;
     padding: 50px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #343434;
     text-align: center;
     display: grid;
-    gap: 30px;
+    gap: 10px;
     grid-template-rows: 100px 1fr 1fr;
     grid-template-columns: auto 600px auto;
     align-content: center;
+    place-items: center;
 }
 
 header, nav {
@@ -37,6 +38,12 @@ h1 {
 
 img {
     width: 125px;
+}
+
+nav {
+    margin-top: -70px;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
@@ -61,6 +68,7 @@ h2 {
     grid-row: 1;
     grid-column: 1 / 4;
     font-size: 1.3em;
+    text-align: center;
 }
 
 .card {
@@ -69,6 +77,7 @@ h2 {
     border-radius: 5px;
     border-width: 2px;
     grid-column: 2/3;
+    width: 400px;
     /* margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
