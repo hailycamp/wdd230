@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Inclusive Sans', sans-serif;
+    margin: 50px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+}
+
+.card img {
+    grid-column: 1 / 2;
+    height: 150px;
+}
+
+.card h2, h3, a, p {
+    grid-column: 2 / 3;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover, a:visited:hover {
+    color: indianred;
+}
+
+/* First, find the 3 website examples. Here's a good place to check: https://business.adobe.com/blog/basics/best-website-design-examples#award-winning-website-designs-from-2022 . 
+
+Then, create media queries to have 3 responsive sizes for this page: 1, 2, and 3 columns of cards, respectively. and use grid layout for the cards. */

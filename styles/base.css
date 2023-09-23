@@ -8,21 +8,6 @@ body {
     background-color: #ffe8d1;
 }
 
-main {
-    max-width: 1000px;
-    padding: 50px;
-    margin: auto;
-    margin-bottom: 20px;
-    color: #343434;
-    text-align: center;
-    display: grid;
-    gap: 10px;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-columns: auto 600px auto;
-    align-content: center;
-    place-items: center;
-}
-
 header, nav {
     background-color: #5d663b;
     text-align: center;
@@ -57,11 +42,19 @@ nav a:hover {
     color: #f2bba4;
 }
 
-main hr {
-    background-color: #CE5953;
-    height: 1px;
-    width: 1000px;
-    border: none;
+main {
+    max-width: 1000px;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #343434;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-columns: auto 600px auto;
+    align-content: center;
+    place-items: center;
 }
 
 h2 {
