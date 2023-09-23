@@ -3,22 +3,35 @@
 body {
     background-color: antiquewhite;
     font-family: 'Inclusive Sans', sans-serif;
-    margin: 50px;
+    margin: 50px 500px;
 }
 
 h1 {
     margin-bottom: 50px;
+    font-size: 2.5em;
 }
 
 .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 20px;
+    padding: 30px;
+    padding-left: 0px;
 }
 
 .card img {
     grid-column: 1 / 2;
-    height: 150px;
+    grid-row: 1 / 5;
+    height: 300px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.2em;
 }
 
 .card h2, h3, a, p {
@@ -34,6 +47,4 @@ a:hover, a:visited:hover {
     color: indianred;
 }
 
-/* First, find the 3 website examples. Here's a good place to check: https://business.adobe.com/blog/basics/best-website-design-examples#award-winning-website-designs-from-2022 . 
-
-Then, create media queries to have 3 responsive sizes for this page: 1, 2, and 3 columns of cards, respectively. and use grid layout for the cards. */
+/* Then, create media queries to have 3 responsive sizes for this page: 1, 2, and 3 columns of cards, respectively. and use grid layout for the cards. */

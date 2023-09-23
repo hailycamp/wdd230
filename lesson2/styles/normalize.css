@@ -6,6 +6,10 @@ body {
     margin: 40px;
 }
 
+p {
+    font-size: 16px;
+}
+
 /**
 * Render the `main` element consistently in IE.
 */
