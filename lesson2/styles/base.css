@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
 
 body {
     background-color: antiquewhite;
@@ -110,7 +110,8 @@ a:hover, a:visited:hover {
 
     .card {
         display: grid;
-        grid-template-areas: 1fr 1fr / 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .card img {
