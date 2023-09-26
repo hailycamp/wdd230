@@ -54,8 +54,6 @@ a:hover, a:visited:hover {
     color: indianred;
 }
 
-/* Then, create media queries to have 3 responsive sizes for this page: 1, 2, and 3 columns of cards, respectively. and use grid layout for the cards. */
-
 @media screen and (min-width: 750px) {
     .card {
         display: grid;
