@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="icon" href="images/favicon.ico">
     <title>Haily McGhie - WDD 230 - Web Frontend Development</title>
 </head>
@@ -20,13 +21,18 @@
         <img src="images/profile.jpg" alt="haily mcghie profile">
         <h1>Haily McGhie</h1>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="byui.edu" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng#p20"  target="_blank">Scripture</a>
-    </nav>
+    <div class="nav container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="chamber/siteplan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="byui.edu" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng#p20"  target="_blank">Scripture</a>
+        </nav>
+        <button class="button">
+            <div class="bar"></div>
+        </button>
+    </div>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -56,5 +62,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
 </body>
 </html>

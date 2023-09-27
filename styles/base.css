@@ -31,6 +31,10 @@ nav {
     flex-direction: column;
 }
 
+.button {
+    display: none;
+}
+
 nav a {
     color: #ffe8d1;
     text-decoration: none;
@@ -52,7 +56,7 @@ main {
     display: grid;
     gap: 10px;
     grid-template-rows: 100px 1fr 1fr;
-    grid-template-columns: auto 600px auto;
+    grid-template-columns: auto 80% auto;
     align-content: center;
     place-items: center;
 }
@@ -70,11 +74,8 @@ h2 {
     border-radius: 5px;
     border-width: 2px;
     grid-column: 2/3;
-    width: 400px;
-    /* margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: 800px; */
+    width: 100%;
+    max-width: 800px;
 }
 
 .card h3 {
