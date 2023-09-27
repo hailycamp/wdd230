@@ -61,6 +61,11 @@ main {
     place-items: center;
 }
 
+h1::selection, main h2::selection, main section h3::selection, p::selection, li::selection, a::selection {
+    background-color: #CE5953;
+    color: #ffe8d1;
+}
+
 h2 {
     grid-row: 1;
     grid-column: 1 / 4;
