@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 body {
-    width: 100vw;
+    width: auto;
     padding: 0.5rem;
     font-family: 'Lora', serif;
     background-color: #ffe8d1;
@@ -28,7 +28,8 @@ img {
 nav {
     margin-top: -70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .button {
@@ -114,6 +115,11 @@ h2 {
 ul {
     list-style: none;
     line-height: 2em;
+}
+
+iframe {
+    position: relative;
+    bottom: 16px;
 }
 
 footer {

@@ -1,8 +1,4 @@
 @media (min-width: 1050px) {
-    nav {
-        flex-direction: row;
-        justify-content: center;
-    }
 
     main {
         grid-template-columns: auto 400px 400px auto;
