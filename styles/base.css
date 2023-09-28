@@ -117,9 +117,10 @@ ul {
     line-height: 2em;
 }
 
-iframe {
-    position: relative;
-    bottom: 16px;
+#map {
+    margin: 30px auto;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 footer {
