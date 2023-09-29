@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(244, 233, 211);
+}
+
+/* FONT SELECTIONS */
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+#color-scheme p {
+    font-weight: 500;
+}
+
+/* STRUCTURING & STYLING THE COLOR SCHEME SECTION */
+
+#color-scheme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.color-card {
+    background-color: white;
+    border-style: none;
+
+    padding: 15px;
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.color-swatch {
+    width: 150px;
+    height: 115px;
+}
+
+/* can't figure out why the color swatches are all the same color. */
+
+.color-swatch:first-of-type {
+    background-color: #323d4f;
+}
+
+.color-swatch:nth-of-type(2) {
+    background-color: #566d7c;
+}
+
+.color-swatch:nth-of-type(3) {
+    background-color: #9eb4a7;
+}
+
+.color-swatch:nth-of-type(4) {
+    background-color: #d3b4a2;
+}
+
+.color-swatch:last-of-type {
+    background-color: #fff4cd;
+}
+
+.color-card p {
+    text-align: center;
+    text-transform: uppercase;
+}
