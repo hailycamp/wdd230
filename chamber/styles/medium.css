@@ -1,0 +1,21 @@
+@media screen and (min-width: 700px) {
+
+    #action-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #action-menu h2 {
+        grid-column: 1 / 4;
+        text-align: center;
+    }
+
+    .action-card {
+        padding: 1rem;
+        grid-row-start: 2;
+    }
+
+}

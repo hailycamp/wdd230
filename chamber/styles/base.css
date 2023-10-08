@@ -1,3 +1,11 @@
+/* temp style */
+
+#action-menu img, #events img, #spotlight img {
+    width: clamp(100px, 100%, 200px);
+}
+
+/* temp style ^^^ */
+
 :root {
     --base:  rgb(244, 235, 218);
     --dark-blue: #323d4f;
@@ -27,13 +35,10 @@ p {
 
 a {
     font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.button a {
-    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 
@@ -48,6 +53,14 @@ header {
     color: white;
 }
 
+nav a, nav a:visited {
+    color: white;
+}
+
+nav a:hover, a:active {
+    color: var(--sunshine);
+}
+
 #action-menu {
     background-color: var(--dead-salmon);
 }
@@ -60,11 +73,19 @@ header {
     background-color: var(--seafoam);
 }
 
-a, a:visited, a:active {
+.button a, a:visited, a:active {
     color: var(--dark-blue);
 }
 
-a:hover {
+.button a:hover {
+    color: var(--haze-blue);
+}
+
+#action-menu a, a:visited, a:active {
+    color: var(--dark-blue);
+}
+
+#action-menu a:hover {
     color: var(--haze-blue);
 }
 
@@ -76,15 +97,34 @@ footer {
     background-color: #323d4f;
 }
 
-footer h2, p {
+footer p {
     color: white;
 }
 
-/* formatting */
+/* Formatting */
 
 header {
+    width: 100%;
     margin: -3rem;
     padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem;
 }
 
 section {
@@ -92,21 +132,18 @@ section {
 }
 
 #action-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5rem auto;
-    align-items: center;
-    justify-content: center;
+    padding: 3rem;
+    margin: -3rem;
+    margin-top: 100px;
 }
 
 #action-menu h2 {
-    grid-column: 1 / 4;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .action-card {
     padding: 1rem;
-    grid-row-start: 2;
 }
 
 .event-card {
@@ -128,7 +165,90 @@ section {
     padding: 1.5rem;
 }
 
+#spotlight {
+    padding: 3rem;
+    margin: -3rem;
+    margin-top: 100px;
+}
+
+#weather {
+    padding-bottom: 75px;
+}
+
 footer {
     margin: -3rem;
     padding: 4rem;
+    text-align: center;
+}
+
+footer .logo {
+    width: clamp(150px, 50%, 250px);
+}
+
+
+@media screen and (max-width: 700px) {
+    /* make a mobile view with a hamburger menu */
+
+    .ham-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: block;
+        z-index: 2;
+
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        background: none;
+        appearance: none;
+        outline: none;
+        border: none;
+    }
+
+    .ham-button .bar, .ham-button::before, .ham-button::after {
+        content: '';
+        display: block;
+
+        height: 4px;
+        width: 100%;
+        background-color: white;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+
+    .ham-button.open::before {
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+
+    .ham-button.open::after {
+        transform: rotate(45deg) translate(-8px, -7px);
+    }
+
+    .ham-button.open .bar {
+        opacity: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+        position: fixed;
+        top: 50px;
+        min-height: 100vh;
+        z-index: 1;
+        
+        transition: 0.4s;
+    }
+
+    nav.open a {
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 4rem;
+        background-color: var(--dark-blue);
+    }
+
 }
