@@ -10,7 +10,7 @@ button.addEventListener('click', function() {
     else {
         const listItem = document.createElement('li');
         const deleteButton = document.createElement('button');
-        listItem.innerHTML = input.value;
+        listItem.innerHTML = `<a href='https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=eng'>${input.value}</a>`;
         deleteButton.textContent = '×';
         listItem.append(deleteButton);
         list.append(listItem);
