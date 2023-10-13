@@ -1,11 +1,3 @@
-/* temp style */
-
-#action-menu img, #events img, #spotlight img {
-    width: clamp(100px, 100%, 200px);
-}
-
-/* temp style ^^^ */
-
 :root {
     --base:  rgb(244, 235, 218);
     --dark-blue: #323d4f;
@@ -127,6 +119,28 @@ nav a {
     padding: 1rem;
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 45% 35%;
+    margin: 0;
+    margin-top: 3rem;
+    margin-left: -2.5rem;
+    margin-bottom: -6.25rem;
+    width: 100%;
+}
+
+#hero img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    width: 100%;
+}
+
+#hero h2, #hero p, #hero div {
+    grid-column: 2 / 3;
+    margin: 2rem;
+}
+
 section {
     margin-top: 75px;
 }
@@ -140,6 +154,11 @@ section {
 #action-menu h2 {
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#action-menu img {
+    width: clamp(100px, 100%, 600px);
 }
 
 .action-card {
@@ -152,8 +171,17 @@ section {
     margin: 2.5rem auto;
 }
 
+#events img {
+    width: clamp(100px, 100%, 600px);
+}
+
+#events h2 {
+    text-align: center;
+}
+
 .button {
     width: 14rem;
+    height: 1.5rem;
     border-radius: 10px;
 
     text-align: center;
@@ -171,6 +199,10 @@ section {
     margin-top: 100px;
 }
 
+#spotlight img {
+    width: clamp(100px, 100%, 600px);
+}
+
 #weather {
     padding-bottom: 75px;
 }
@@ -184,6 +216,9 @@ footer {
 footer .logo {
     width: clamp(150px, 50%, 250px);
 }
+
+
+/* hamburger menu */
 
 
 @media screen and (max-width: 700px) {
@@ -252,3 +287,5 @@ footer .logo {
     }
 
 }
+
+/* less than 1345px is where it starts needing new  */
