@@ -332,22 +332,24 @@ footer .logo {
     margin-right: -3rem;
     padding-left: 2rem;
     padding-right: 2rem;
-
-    #action-menu {
-        background-color: #1e242e;
-        .action-card a {
-            color: white;
-        }
-    }
-
-    .event-card {
-        background-color: #1e242e;
-    }
-
-    #spotlight {
-        background-color: #1e242e;
-    }
 }
+
+.dark #action-menu {
+    background-color: #1e242e;
+}
+
+.dark #action-menu .action-card a {
+    color: white;
+}
+
+.dark .event-card {
+    background-color: #1e242e;
+}
+
+.dark #spotlight {
+    background-color: #1e242e;
+}
+
 
   
 /* less than 1345px is where it starts needing new  */
