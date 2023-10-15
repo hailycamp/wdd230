@@ -111,6 +111,8 @@ h1 {
 nav {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    right: 145px;
 }
 
 nav a {
@@ -167,7 +169,7 @@ section {
 
 .event-card {
     padding: 1rem;
-    width: clamp(300px, 75%, 750px);
+    width: clamp(300px, 75%, 500px);
     margin: 2.5rem auto;
 }
 
@@ -177,6 +179,7 @@ section {
 
 #events h2 {
     text-align: center;
+    padding-top: 3rem;
 }
 
 .button {
@@ -197,6 +200,10 @@ section {
     padding: 3rem;
     margin: -3rem;
     margin-top: 100px;
+}
+
+#spotlight h2 {
+    text-align: center;
 }
 
 #spotlight img {
@@ -288,4 +295,59 @@ footer .logo {
 
 }
 
+/* dark mode button and effects */
+
+.switch {
+    position: absolute;
+    right: 40px;
+    display: inline-block;
+    width: 75px;
+    height: 34px;
+}
+  
+.darkbtn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--seafoam);
+    border-radius: 10px;
+}
+
+.darkbtn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.dark {
+    background-color: #1e242e;
+    color: white;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    #action-menu {
+        background-color: #1e242e;
+        .action-card a {
+            color: white;
+        }
+    }
+
+    .event-card {
+        background-color: #1e242e;
+    }
+
+    #spotlight {
+        background-color: #1e242e;
+    }
+}
+
+  
 /* less than 1345px is where it starts needing new  */
