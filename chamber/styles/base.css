@@ -228,7 +228,7 @@ footer .logo {
 /* hamburger menu */
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     /* make a mobile view with a hamburger menu */
 
     .ham-button {
