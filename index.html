@@ -7,7 +7,7 @@
     <meta name="author" content="Haily McGhie">
     <meta property="og:title" content="Haily McGhie's WDD 230 Homepage">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://hailycamp.github.io/wdd230/images/hometown.jpeg">
+    <meta property="og:image" content="https://hailycamp.github.io/wdd230/images/hometown.webp">
     <meta property="og:url" content="https://hailycamp.github.io/wdd230/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="haily mcghie profile">
+        <img src="images/profile.webp" alt="haily mcghie profile">
         <h1>Haily McGhie</h1>
     </header>
     <div class="nav container">
@@ -33,15 +33,16 @@
             <div class="bar"></div>
         </div>
     </div>
-    <div class="hero">
-		<picture>
-			<img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/1280x800/yigo_guam_temple_2.jpg" alt="Yigo Guam Temple - 2022">
-		</picture>
-		<div class="herolabel">
-			<p>Yido Guam Temple</p>
-		</div>
-	</div>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="max-width: 400px" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="laie hawaii temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <p>Laie Hawai'i Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>

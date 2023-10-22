@@ -64,4 +64,10 @@
         line-height: 4rem;
     }
 
+    main {
+        grid-template-columns: auto 99% auto;
+    }
+
 }
+
+
