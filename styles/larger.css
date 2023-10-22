@@ -2,8 +2,12 @@
 
     main {
         grid-template-columns: auto 400px 400px auto;
-        grid-template-rows: 100px auto;
+        grid-template-rows: auto 100px auto;
         gap: 50px;
+    }
+
+    .hero {
+        grid-column: 1 / 5;
     }
 
     h2 {

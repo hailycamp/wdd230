@@ -1,4 +1,9 @@
 @media screen and (max-width: 700px) {
+    
+    main {
+        grid-template-columns: auto 99% auto;
+    }
+
     /* make a mobile view with a hamburger menu */
 
     .button {
@@ -62,10 +67,6 @@
         width: 100%;
         font-size: 2rem;
         line-height: 4rem;
-    }
-
-    main {
-        grid-template-columns: auto 99% auto;
     }
 
 }
