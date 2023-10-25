@@ -159,7 +159,16 @@ ul {
 #map {
     margin: 30px auto;
     padding-bottom: 40px;
-    text-align: center;
+    width: clamp(15.5rem, 100%, 50rem);
+    height: auto;
+}
+
+#map iframe {
+    border: 0;
+
+    width: 100%;
+    height: auto;
+    min-height: 15.5rem;
 }
 
 footer {
