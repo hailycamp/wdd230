@@ -95,6 +95,28 @@ footer p {
 
 /* Formatting */
 
+/* ----- general content ----- */
+
+section {
+    margin-top: 75px;
+}
+
+.button {
+    width: 14rem;
+    height: 1.5rem;
+    border-radius: 10px;
+
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.button a {
+    padding: 1.5rem;
+}
+
+/* ----- header content ----- */
+
 header {
     width: 100%;
     margin: -3rem;
@@ -121,6 +143,8 @@ nav a {
     padding: 1rem;
 }
 
+/* ----- hero content ----- */
+
 #hero {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -143,20 +167,26 @@ nav a {
     margin: 2rem;
 }
 
-section {
-    margin-top: 75px;
-}
+/* ----- 'things we do for you' content ----- */
 
 #action-menu {
     padding: 3rem;
     margin: -3rem;
     margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    align-items: center;
+    justify-content: center;
 }
 
 #action-menu h2 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
+
+    grid-column: 1 / 4;
 }
 
 #action-menu img {
@@ -165,7 +195,10 @@ section {
 
 .action-card {
     padding: 1rem;
+    grid-row-start: 2;
 }
+
+/* ----- event timeline content ----- */
 
 .event-card {
     padding: 1rem;
@@ -182,19 +215,7 @@ section {
     padding-top: 3rem;
 }
 
-.button {
-    width: 14rem;
-    height: 1.5rem;
-    border-radius: 10px;
-
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.button a {
-    padding: 1.5rem;
-}
+/* ----- business spotlight content ----- */
 
 #spotlight {
     padding: 3rem;
@@ -210,6 +231,8 @@ section {
     width: clamp(100px, 100%, 600px);
 }
 
+/* ----- footer content ----- */
+
 #weather {
     padding-bottom: 75px;
 }
@@ -222,77 +245,6 @@ footer {
 
 footer .logo {
     width: clamp(150px, 50%, 250px);
-}
-
-
-/* hamburger menu */
-
-
-@media screen and (max-width: 600px) {
-    /* make a mobile view with a hamburger menu */
-
-    .ham-button {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        display: block;
-        z-index: 2;
-
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-
-        background: none;
-        appearance: none;
-        outline: none;
-        border: none;
-    }
-
-    .ham-button .bar, .ham-button::before, .ham-button::after {
-        content: '';
-        display: block;
-
-        height: 4px;
-        width: 100%;
-        background-color: white;
-        margin: 6px 0px;
-        transition: 0.4s;
-    }
-
-    .ham-button.open::before {
-        transform: rotate(-45deg) translate(-7px, 6px);
-    }
-
-    .ham-button.open::after {
-        transform: rotate(45deg) translate(-8px, -7px);
-    }
-
-    .ham-button.open .bar {
-        opacity: 0;
-    }
-
-    nav {
-        display: none;
-    }
-
-    nav.open {
-        display: block;
-        position: fixed;
-        top: 50px;
-        min-height: 100vh;
-        z-index: 1;
-        
-        transition: 0.4s;
-    }
-
-    nav.open a {
-        display: block;
-        width: 100%;
-        font-size: 2rem;
-        line-height: 4rem;
-        background-color: var(--dark-blue);
-    }
-
 }
 
 /* dark mode button and effects */
