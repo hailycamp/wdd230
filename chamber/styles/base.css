@@ -171,7 +171,7 @@ nav a {
     object-position: 20% 50%;
 }
 
-#hero h2, #hero p, #hero div {
+#hero h2, #hero h2, #hero div {
     grid-column: 2 / 3;
     margin: 2rem;
 }
