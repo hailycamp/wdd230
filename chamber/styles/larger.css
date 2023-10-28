@@ -1,0 +1,31 @@
+@media screen and (min-width: 1050px) {
+
+    nav {
+        left: 8rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    nav {
+        left: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+
+    nav {
+        left: 16rem;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    nav {
+        left: 20rem;
+    }
+
+}

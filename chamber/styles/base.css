@@ -226,8 +226,7 @@ nav a {
 
 #spotlight {
     padding: 3rem;
-    margin: -3rem;
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 
 #spotlight h2 {
@@ -235,23 +234,23 @@ nav a {
 }
 
 #spotlight img {
-    width: clamp(100px, 100%, 600px);
+    width: clamp(100px, 90%, 600px);
 }
 
 /* ----- footer content ----- */
 
 #weather {
-    padding-bottom: 75px;
+    padding-bottom: 4rem;
 }
 
 footer {
-    margin: -3rem;
+    /* margin: -3rem; */
     padding: 4rem;
     text-align: center;
 }
 
 footer .logo {
-    width: clamp(150px, 50%, 250px);
+    width: clamp(50px, 50%, 150px);
 }
 
 /* dark mode button and effects */

@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     
     /* make a mobile view with a hamburger menu */
 
@@ -49,8 +49,9 @@
     nav.open {
         display: block;
         position: fixed;
-        top: 50px;
-        min-height: 100vh;
+        
+        height: 100vh;
+        width: 100vw;
         z-index: 1;
         
         transition: 0.4s;
@@ -58,10 +59,43 @@
 
     nav.open a {
         display: block;
-        width: 100%;
+        width: 100vw;
         font-size: 2rem;
         line-height: 4rem;
         background-color: var(--dark-blue);
+    }
+
+    /* hero */
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ----- 'things we do for you' content ----- */
+
+    #action-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #action-menu h2 {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .action-card {
+        margin-top: 4rem;
+    }
+
+    .action-card img {
+        margin-bottom: -1.5rem;
+    }
+
+    .event-card {
+        padding: 1rem;
+        width: clamp(250px, 75%, 450px);
+        margin: 2.5rem auto;
     }
 
 }
