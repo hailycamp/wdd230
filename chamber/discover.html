@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kailua town chamber of commerce website">
+    <meta name="author" content="Haily McGhie">
+
+    <meta property="og:title" content="Kailua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hailycamp.github.io/wdd230/chamber/images/kailua-social-img.png">
+    <meta property="og:url" content="https://hailycamp.github.io/wdd230/chamber/index.html">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oswald:wght@400;500&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Kailua Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Kailua Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="ham-button">
+            <div class="bar"></div>
+        </div>
+        <div class="switch">
+            <span class="darkbtn">Dark</span> 
+        </div>
+    </header>
+    <main class="page" id="discover">
+        <h2>Discover</h2>
+        <div class="sidebar">
+            <div>
+                <h3>Demographics</h3>
+                <p>Kailua is home to 40,400 people, 97.6% of which are citizens. As of 2021, 8.75% of Kailua residents were born outside of the country. In 2021, there were 1.71 times more White (Non-Hispanic) residents (16.7k people) in Kailua, HI than any other race or ethnicity.</p>
+            </div>
+            <div>
+                <h3>Events</h3>
+                <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FDenver" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div>
+                <h3>Highlighted Attractions</h3>
+                <p>attractions</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="images/kailua-beach-park.webp" alt="kailua beach park">
+            <img src="images/pub-and-grill.webp" alt="kailua pub and grill">
+            <img src="images/lanikai-monument.webp" alt="lanikai monument">
+            <img src="images/olive-boutique.webp" alt="olive boutique interior">
+            <img src="images/the-boardroom-restaurant.webp" alt="the boardroom restaurant">
+            <img src="images/lanikai-island-lookout.webp" alt="lanikai island lookout">
+            <img src="images/wilson-store-shave-ice.webp" alt="wilson store shave ice">
+            <img src="images/the-bike-shop.webp" alt="the bike shop in kailua">
+        </div>
+    </main>
+    <footer>
+        <img class="logo" src="images/logo.webp" alt="">
+        <p>communications@kcc.com</p>
+        <p>(808) 555-6262</p>
+        <p>Haily McGhie | WDD 230 Course Project</p>
+        <p id="last-mod"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

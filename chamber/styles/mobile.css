@@ -72,6 +72,10 @@
         flex-direction: column;
     }
 
+    #hero h2, #hero p, #hero div {
+        margin: 1.2rem;
+    }
+
     /* ----- 'things we do for you' content ----- */
 
     #action-menu {
@@ -82,9 +86,11 @@
     #action-menu h2 {
         padding-top: 1rem;
         padding-bottom: 0;
+        margin-bottom: -1.5rem;
     }
 
     .action-card {
+        margin: -1rem;
         margin-top: 4rem;
     }
 
@@ -96,6 +102,21 @@
         padding: 1rem;
         width: clamp(250px, 75%, 450px);
         margin: 2.5rem auto;
+    }
+
+    /*  --------------------- DISCOVER PAGE ------------------- */
+
+    #discover {
+        display: flex;
+        flex-direction: column;
+
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+    }
+
+    .gallery {
     }
 
 }
