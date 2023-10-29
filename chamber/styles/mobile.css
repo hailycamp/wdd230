@@ -113,10 +113,26 @@
         overflow-x: hidden;
     }
 
-    .sidebar {
+    .sidebar div {
+        margin-top: 1rem;
     }
 
     .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery .gallery-img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .gallery .gallery-img img {
+        transform: none;
+    }
+
+    .gallery .gallery-img img:hover {
+        transform: none;
     }
 
 }

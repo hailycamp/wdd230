@@ -240,7 +240,7 @@ nav a {
 /* ----- footer content ----- */
 
 #weather {
-    padding-bottom: 4rem;
+    padding: 3rem;
 }
 
 footer {
@@ -356,7 +356,7 @@ footer .logo {
 #discover {
     display: grid;
     grid-template-columns: 25% 75%;
-    gap: 3rem;
+    gap: 2rem;
 
     margin: 3rem;
 }
@@ -370,6 +370,10 @@ footer .logo {
 
 .sidebar {
     grid-column: 1 / 2;
+}
+
+.sidebar h3 {
+    margin-top: 0.5rem;
 }
 
 .sidebar div {
@@ -389,12 +393,26 @@ footer .logo {
     justify-content: space-around;
 }
 
-.gallery img {
-    aspect-ratio: 4 / 5;
-    width: clamp(5rem, 30%, 15rem);
-    height: auto;
-    padding: 0.5rem;
+.gallery .gallery-img {
+    width: clamp(10rem, 30%, 20rem);    
+    padding: 0.25rem;
     box-sizing: border-box;
+}
+
+.gallery .gallery-img img {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+
+.gallery .gallery-img img:hover {
+    transform: scale(0.95);
+    transition: 0.4s;
+}
+
+.gallery .gallery-img p {
+    font-size: 0.9rem;
 }
 
 #discover .sidebar iframe {
