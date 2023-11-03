@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development: Haily McGhie course assignment portal">
+    <meta name="author" content="Haily McGhie">
+    <meta property="og:title" content="Haily McGhie's WDD 230 Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hailycamp.github.io/wdd230/images/hometown.webp">
+    <meta property="og:url" content="https://hailycamp.github.io/wdd230/">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Haily McGhie - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="haily mcghie profile">
+        <h1>Haily McGhie</h1>
+    </header>
+    <div class="nav container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/2?lang=eng#p20"  target="_blank">Scripture</a>
+        </nav>
+        <div class="button">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <main>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input id="username" type="text" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+            </div>
+            <br>
+            <div>
+                <label for="conf_password">Confirm Password:</label>
+                <input id="conf_password" type="password" name="confirm-password" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+            </div>
+            <br>
+            <div>
+                <label for="rating">Page Rating: <span id="rangevalue">5</span></label>
+                <input id="rating" type="range" name="rating" min="1" max="10" step="1" value="5">
+            </div>
+            <br>
+            <p id="formmessage"></p>
+            <p id="emailmessage"></p>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p id="copyrightInfo"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/pwdvalidator.js"></script>
+</body>
+</html>

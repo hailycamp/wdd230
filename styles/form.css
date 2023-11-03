@@ -1,0 +1,22 @@
+:root {
+    --error-text-size: 0.85rem;
+    --error-text-color: red;
+    --standard-margins: 1rem auto;
+}
+
+main {
+    display: block;
+}
+
+form {
+    text-align: left;
+    margin: var(--standard-margins);
+}
+
+#formmessage, #emailmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: var(--error-text-color);
+    font-size: var(--error-text-size);
+}
