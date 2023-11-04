@@ -41,87 +41,86 @@
             <h2>Membership Benefits</h2>
             <div>
                 <h3>NP Membership</h3>
-                <p class="price">$0</p>
+                <p class="price">$0/year</p>
                 <p>This level is for non-profit organizations and has no fee. It includes the same benefits as a Silver Member.</p>
             </div>
             <div>
                 <h3>Bronze Membership</h3>
-                <p class="price">$155</p>
-                <p>You get access to...</p>
+                <p class="price">$155/year</p>
+                <p>You get access to quarterly mixers, professional development workshops, and 10% off business insurance premiums contracted through Kailua's own, Jack Wolfe Insurance Inc.</p>
             </div>
             <div>
                 <h3>Silver Membership</h3>
-                <p class="price">$225</p>
-                <p>You get access to...</p>
+                <p class="price">$225/year</p>
+                <p>You get access to everything from the Bronze membership, plus 30% off ad space in the Honolulu Star-Advertiser, 25% off insurance premiums through Jack Wolfe Insurance Inc., and direct communication with our chamber's own board of legal advisors.</p>
             </div>
             <div>
                 <h3>Gold Membership</h3>
-                <p class="price">$415</p>
-                <p>You get access to...</p>
+                <p class="price">$415/year</p>
+                <p>You get access to everything in the Silver membership, plus quarterly marketing at local grocery stores, vip reserved tents at all Kailua & Lanikai farmer's markets, and spotlight space on our town chamber's very own website.</p>
             </div>
             <br>
-            <p class="sidenote">Prices listed are annual fees.</p>
         </section>
         <div class="form">
             <h2>Join the Chamber</h2>
             <form method="get" action="thankyou.html">
                 <!-- first name -->
                 <div>
-                    <label for="fname">First Name: </label>
+                    <label for="fname">First Name: </label><br>
                     <input id="fname" name="fname" type="text" required>
                 </div>
                 <br>
                 <!-- last name -->
                 <div>
-                    <label for="lname">Last Name: </label>
+                    <label for="lname">Last Name: </label><br>
                     <input id="lname" name="lname" type="text" required>
-                </div>
-                <br>
-                <!-- title or position -->
-                <div>
-                    <label for="position">Position in Organization: </label>
-                    <input id="position" name="position" type="text" pattern="[a-zA-Z( )\-]{7,}">
                 </div>
                 <br>
                 <!-- email address -->
                 <div>
-                    <label for="email">Email Address: </label>
+                    <label for="email">Email Address: </label><br>
                     <input id="email" name="email" type="email" required placeholder="username@domain.com">
                 </div>
                 <br>
                 <!-- phone number -->
                 <div>
-                    <label for="phone">Phone Number: </label>
+                    <label for="phone">Phone Number: </label><br>
                     <input id="phone" name="phone" type="tel" required>
                 </div>
                 <br>
                 <!-- biz/organization name -->
                 <div>
-                    <label for="business">Business Name: </label>
+                    <label for="business">Business Name: </label><br>
                     <input id="business" name="business" type="text" required>
                 </div>
                 <br>
-                <!-- membership level selection : NP Membership is for non profit organizations and there is no fee. Bronze Membership. Silver Membership. Gold Membership -->
+                <!-- title or position -->
                 <div>
-                    <p>Select Membership Level: </p>
-                    <label for="np">NP</label>
-                    <input id="np" name="membership" type="radio" value="NP Membership">
-                    <br>
-                    <label for="bronze">Bronze</label>
-                    <input id="bronze" name="membership" type="radio" value="Bronze Membership">
-                    <br>
-                    <label for="silver">Silver</label>
-                    <input id="silver" name="membership" type="radio" value="Silver Membership">
-                    <br>
-                    <label for="gold">Gold</label>
-                    <input id="gold" name="membership" type="radio" value="Gold Membership">
+                    <label for="position">Position in Organization: </label><br>
+                    <input id="position" name="position" type="text" pattern="[a-zA-Z( )\-]{7,}">
                 </div>
-                <br>
+                <br>   
                 <!-- biz/org description -->
                 <div>
                     <label for="description">About Your Business: </label>
                     <br>
                     <textarea id="description" name="description" maxlength="200"  placeholder="A brief description of your business or organization..."></textarea>
+                </div>            
+                <!-- membership level selection : NP Membership is for non profit organizations and there is no fee. Bronze Membership. Silver Membership. Gold Membership -->
+                <div>
+                    <p>Select Membership Level: </p>
+                    
+                    <input id="np" name="membership" type="radio" value="NP Membership">
+                    <label for="np">NP</label><br>
+                    
+                    <input id="bronze" name="membership" type="radio" value="Bronze Membership">
+                    <label for="bronze">Bronze</label><br>
+                    
+                    <input id="silver" name="membership" type="radio" value="Silver Membership">
+                    <label for="silver">Silver</label><br>
+                    
+                    <input id="gold" name="membership" type="radio" value="Gold Membership">
+                    <label for="gold">Gold</label>
                 </div>
                 <!-- hidden timestamp -->
                 <div>
@@ -130,8 +129,7 @@
                 <br>
                 <!-- submission button -->
                 <div>
-                    <label for="submission"></label>
-                    <input id="submission" name="submission" type="submit">
+                    <button id="submission" type="submit">Apply Now</button>
                 </div>
             </form>
         </div>
