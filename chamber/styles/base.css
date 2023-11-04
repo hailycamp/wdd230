@@ -479,6 +479,10 @@ textarea {
     min-height: 6rem;
 }
 
+::placeholder {
+    font-family: var(--body-txt);
+}
+
 .required::after {
     content: "*";
     color: rgb(243, 121, 121);
