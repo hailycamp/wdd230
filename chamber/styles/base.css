@@ -479,6 +479,11 @@ textarea {
     min-height: 6rem;
 }
 
+.required::after {
+    content: "*";
+    color: rgb(243, 121, 121);
+}
+
 #submission {
     cursor: pointer;
 
