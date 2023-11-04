@@ -62,78 +62,79 @@
             <br>
             <p class="sidenote">Prices listed are annual fees.</p>
         </section>
-        <form method="get" action="thankyou.html">
-            <!-- first name -->
-            <div>
-                <label for="fname">First Name: </label>
-                <input id="fname" name="fname" type="text" required>
-            </div>
-            <br>
-            <!-- last name -->
-            <div>
-                <label for="lname">Last Name: </label>
-                <input id="lname" name="lname" type="text" required>
-            </div>
-            <br>
-            <!-- title or position -->
-            <div>
-                <label for="position">Position in Organization: </label>
-                <input id="position" name="position" type="text" pattern="[a-zA-Z( )\-]{7,}">
-            </div>
-            <br>
-            <!-- email address -->
-            <div>
-                <label for="email">Email Address: </label>
-                <input id="email" name="email" type="email" required placeholder="username@domain.com">
-            </div>
-            <br>
-            <!-- phone number -->
-            <div>
-                <label for="phone">Phone Number: </label>
-                <input id="phone" name="phone" type="tel" required>
-            </div>
-            <br>
-            <!-- biz/organization name -->
-            <div>
-                <label for="business">Business Name: </label>
-                <input id="business" name="business" type="text" required>
-            </div>
-            <br>
-            <!-- membership level selection : NP Membership is for non profit organizations and there is no fee. Bronze Membership. Silver Membership. Gold Membership -->
-            <div>
-                <label for="membership">Select Membership Level: </label>
+        <div class="form">
+            <h2>Join the Chamber</h2>
+            <form method="get" action="thankyou.html">
+                <!-- first name -->
+                <div>
+                    <label for="fname">First Name: </label>
+                    <input id="fname" name="fname" type="text" required>
+                </div>
                 <br>
-                <label for="np">NP</label>
-                <input id="np" name="membership" type="radio" value="NP Membership">
+                <!-- last name -->
+                <div>
+                    <label for="lname">Last Name: </label>
+                    <input id="lname" name="lname" type="text" required>
+                </div>
                 <br>
-                <label for="bronze">Bronze</label>
-                <input id="bronze" name="membership" type="radio" value="Bronze Membership">
+                <!-- title or position -->
+                <div>
+                    <label for="position">Position in Organization: </label>
+                    <input id="position" name="position" type="text" pattern="[a-zA-Z( )\-]{7,}">
+                </div>
                 <br>
-                <label for="silver">Silver</label>
-                <input id="silver" name="membership" type="radio" value="Silver Membership">
+                <!-- email address -->
+                <div>
+                    <label for="email">Email Address: </label>
+                    <input id="email" name="email" type="email" required placeholder="username@domain.com">
+                </div>
                 <br>
-                <label for="gold">Gold</label>
-                <input id="gold" name="membership" type="radio" value="Gold Membership">
-            </div>
-            <br>
-            <!-- biz/org description -->
-            <div>
-                <label for="description">About Your Business: </label>
+                <!-- phone number -->
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input id="phone" name="phone" type="tel" required>
+                </div>
                 <br>
-                <textarea id="description" name="description" maxlength="200"  placeholder="A brief description of your business or organization..."></textarea>
-            </div>
-            <!-- hidden timestamp -->
-            <div>
-                <label for="timestamp"></label>
-                <input id="timestamp" name="timestamp" type="hidden">
-            </div>
-            <br>
-            <!-- submission button -->
-            <div>
-                <label for="submission"></label>
-                <input id="submission" name="submission" type="submit">
-            </div>
-        </form>
+                <!-- biz/organization name -->
+                <div>
+                    <label for="business">Business Name: </label>
+                    <input id="business" name="business" type="text" required>
+                </div>
+                <br>
+                <!-- membership level selection : NP Membership is for non profit organizations and there is no fee. Bronze Membership. Silver Membership. Gold Membership -->
+                <div>
+                    <p>Select Membership Level: </p>
+                    <label for="np">NP</label>
+                    <input id="np" name="membership" type="radio" value="NP Membership">
+                    <br>
+                    <label for="bronze">Bronze</label>
+                    <input id="bronze" name="membership" type="radio" value="Bronze Membership">
+                    <br>
+                    <label for="silver">Silver</label>
+                    <input id="silver" name="membership" type="radio" value="Silver Membership">
+                    <br>
+                    <label for="gold">Gold</label>
+                    <input id="gold" name="membership" type="radio" value="Gold Membership">
+                </div>
+                <br>
+                <!-- biz/org description -->
+                <div>
+                    <label for="description">About Your Business: </label>
+                    <br>
+                    <textarea id="description" name="description" maxlength="200"  placeholder="A brief description of your business or organization..."></textarea>
+                </div>
+                <!-- hidden timestamp -->
+                <div>
+                    <input id="timestamp" name="timestamp" type="hidden">
+                </div>
+                <br>
+                <!-- submission button -->
+                <div>
+                    <label for="submission"></label>
+                    <input id="submission" name="submission" type="submit">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <img class="logo" src="images/logo.webp" alt="">
