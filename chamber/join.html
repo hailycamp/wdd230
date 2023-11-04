@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kailua town chamber of commerce form to join the chamber">
+    <meta name="author" content="Haily McGhie">
+
+    <meta property="og:title" content="Join the Kailua Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hailycamp.github.io/wdd230/chamber/images/kailua-social-img.png">
+    <meta property="og:url" content="https://hailycamp.github.io/wdd230/chamber/index.html">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Oswald:wght@400;500&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Join the Kailua Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Kailua Chamber of Commerce</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="ham-button">
+            <div class="bar"></div>
+        </div>
+        <div class="switch">
+            <span class="darkbtn">Dark</span> 
+        </div>
+    </header>
+    <main class="page" id="join-page">
+        <section id="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <div>
+                <h3>NP Membership</h3>
+                <p class="price">$0</p>
+                <p>This level is for non-profit organizations and has no fee. It includes the same benefits as a Silver Member.</p>
+            </div>
+            <div>
+                <h3>Bronze Membership</h3>
+                <p class="price">$155</p>
+                <p>You get access to...</p>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <p class="price">$225</p>
+                <p>You get access to...</p>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <p class="price">$415</p>
+                <p>You get access to...</p>
+            </div>
+            <br>
+            <p class="sidenote">Prices listed are annual fees.</p>
+        </section>
+        <form method="get" action="thankyou.html">
+            <!-- first name -->
+            <div>
+                <label for="fname">First Name: </label>
+                <input id="fname" name="fname" type="text" required>
+            </div>
+            <br>
+            <!-- last name -->
+            <div>
+                <label for="lname">Last Name: </label>
+                <input id="lname" name="lname" type="text" required>
+            </div>
+            <br>
+            <!-- title or position -->
+            <div>
+                <label for="position">Position in Organization: </label>
+                <input id="position" name="position" type="text" pattern="[a-zA-Z( )\-]{7,}">
+            </div>
+            <br>
+            <!-- email address -->
+            <div>
+                <label for="email">Email Address: </label>
+                <input id="email" name="email" type="email" required placeholder="username@domain.com">
+            </div>
+            <br>
+            <!-- phone number -->
+            <div>
+                <label for="phone">Phone Number: </label>
+                <input id="phone" name="phone" type="tel" required>
+            </div>
+            <br>
+            <!-- biz/organization name -->
+            <div>
+                <label for="business">Business Name: </label>
+                <input id="business" name="business" type="text" required>
+            </div>
+            <br>
+            <!-- membership level selection : NP Membership is for non profit organizations and there is no fee. Bronze Membership. Silver Membership. Gold Membership -->
+            <div>
+                <label for="membership">Select Membership Level: </label>
+                <br>
+                <label for="np">NP</label>
+                <input id="np" name="membership" type="radio" value="NP Membership">
+                <br>
+                <label for="bronze">Bronze</label>
+                <input id="bronze" name="membership" type="radio" value="Bronze Membership">
+                <br>
+                <label for="silver">Silver</label>
+                <input id="silver" name="membership" type="radio" value="Silver Membership">
+                <br>
+                <label for="gold">Gold</label>
+                <input id="gold" name="membership" type="radio" value="Gold Membership">
+            </div>
+            <br>
+            <!-- biz/org description -->
+            <div>
+                <label for="description">About Your Business: </label>
+                <br>
+                <textarea id="description" name="description" maxlength="200"  placeholder="A brief description of your business or organization..."></textarea>
+            </div>
+            <!-- hidden timestamp -->
+            <div>
+                <label for="timestamp"></label>
+                <input id="timestamp" name="timestamp" type="hidden">
+            </div>
+            <br>
+            <!-- submission button -->
+            <div>
+                <label for="submission"></label>
+                <input id="submission" name="submission" type="submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img class="logo" src="images/logo.webp" alt="">
+        <p>communications@kcc.com</p>
+        <p>(808) 555-6262</p>
+        <p>Haily McGhie | WDD 230 Course Project</p>
+        <p id="last-mod"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+</html>
