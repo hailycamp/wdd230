@@ -11,15 +11,15 @@ const displayLinks = (weeks) => {
 
       li.textContent = `${week.lesson}: `;
 
-      let links_number = week.links;
-      links_number.forEach((link) => {
-        let lesson_link = document.createElement('a');
+      let activities_array = week.links;
+      activities_array.forEach((activity) => {
+        let activity_link = document.createElement('a');
 
-        lesson_link.setAttribute('href', `${link.url}`);
-        lesson_link.textContent = `${link.title} | `;
+        activity_link.setAttribute('href', `${activity.url}`);
+        activity_link.textContent = `${activity.title} | `;
 
         // Append the section(card) with the created elements
-        li.appendChild(lesson_link);
+        li.appendChild(activity_link);
       })
 
 

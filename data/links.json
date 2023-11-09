@@ -2,65 +2,100 @@
     "lessons" : [
         {
             "lesson" : "01",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail Layout"
+                }]
         },
         {
             "lesson" : "02",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url" : "lesson02/media-query.html",
+                    "title" : "Media Queries"
+                },
+                {
+                    "url" : "lesson2/design-principles.html",
+                    "title" : "Design Principles in Action"
+                }
+            ]
         },
         {
             "lesson" : "03",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url" : "images/css-combinators.png",
+                    "title" : "CSS Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/Haily-Campbell/pen/ExGLKGx",
+                    "title" : "Pseudo-Elements"
+                },
+                {
+                    "url" : "https://codepen.io/Haily-Campbell/pen/ZEVoOjW",
+                    "title" : "Hamburger Menu"
+                }
+            ]
         },
         {
             "lesson" : "04",
             "links" : [{
-                "url" : "",
-                "title" : ""
+                "url" : "https://codepen.io/Haily-Campbell/pen/zYyJwgm",
+                "title" : "Pseuo-Classes"
             }]
         },
         {
             "lesson" : "05",
             "links" : [{
-                "url" : "",
-                "title" : ""
+                "url" : "lesson05/bom.html",
+                "title" : "Book of Mormon - DOM Manipulation"
             }]
         },
         {
             "lesson" : "06",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url" : "lesson06/images/landscape.webp",
+                    "title" : "WebP Practice"
+                },
+                {
+                    "url" : "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
         },
         {
             "lesson" : "07",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url" : "lesson07/lazyloading.html",
+                    "title" : "Lazy Loading"
+                },
+                {
+                    "url" : "#",
+                    "title" : "Local Storage BOM App (DNE)"
+                }
+            ]
         },
         {
             "lesson" : "08",
-            "links" : [{
-                "url" : "",
-                "title" : ""
-            }]
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "Building Tables"
+                },
+                {
+                    "url" : "Building a Form",
+                    "title" : "form.html"
+                }
+            ]
         },
         {
             "lesson" : "09",
             "links" : [{
-                "url" : "",
-                "title" : ""
+                "url" : "lesson09/prophets.html",
+                "title" : "Displaying Prophets with Fetch API"
             }]
         },
         {
