@@ -154,6 +154,7 @@ h2 {
 ul {
     list-style: none;
     line-height: 2em;
+    margin: 1rem auto;
 }
 
 #map {
