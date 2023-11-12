@@ -229,20 +229,26 @@ nav a {
 #spotlight {
     padding: 3rem;
     margin-top: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
 }
 
-#spotlight h2 {
+#spotlight h2, h3 {
     text-align: center;
 }
 
 #spotlight img {
-    width: clamp(100px, 90%, 600px);
+    width: clamp(100px, 90%, 500px);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* ----- footer content ----- */
 
 #weather {
     padding: 3rem;
+    text-align: center;
 }
 
 footer {
@@ -512,3 +518,19 @@ textarea {
     margin-bottom: 4rem;
     text-align: center;
 }
+
+
+/* -------------------------------- Directory Page ------------------------------- */
+
+#directory {
+    margin: 3rem;
+}
+
+#directory h2 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* #member-directory {
+
+} */
