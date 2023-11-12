@@ -529,8 +529,57 @@ textarea {
 #directory h2 {
     text-align: center;
     font-size: 2.2rem;
+    padding-bottom: 2rem;
 }
 
-/* #member-directory {
+#member-directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-} */
+#member-directory section {
+    width: 100%;
+    align-items: center;
+    background-color: var(--haze-blue);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border: 1px solid;
+    border-color: var(--dark-blue);
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr repeat(auto-fill, 5rem);
+
+}
+
+#member-directory h3, h4, p {
+    text-align: center;
+    color: white;
+}
+
+#member-directory h4 {
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+#member-directory a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+#member-directory img {
+    aspect-ratio: 1 / 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 75%;
+    height: auto;
+}

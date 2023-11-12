@@ -2,100 +2,77 @@
     "members": [
 
         {
-            "member" : [
-                {
-                    "name": "808 Skate",
-                    "businessType": "Skateboard Shop",
-                    "address": "337 Uluniu St. Kailua, HI 96734",
-                    "phoneNumber": "(808) 263-0808",
-                    "websiteUrl": "https://www.808skate.com/",
-                    "imageFile": "images/808skate.webp",
-                    "membershipLevel": "gold"
-                }]
+            "name": "808 Skate",
+            "businessType": "Skateboard Shop",
+            "address": "337 Uluniu St. Kailua, HI 96734",
+            "phoneNumber": "(808) 263-0808",
+            "websiteUrl": "https://www.808skate.com/",
+            "imageFile": "images/808skate-square.webp",
+            "membershipLevel": "Gold"
+            
         },
         {
-            "member" : [
-                {
-                    "name": "Bee & Tea",
-                    "businessType": "Specialty Drinks",
-                    "address": "131 Hekili St, Kailua, HI 96734",
-                    "phoneNumber": "(808) 262-3808",
-                    "websiteUrl": "https://www.beeandteakailua.com/",
-                    "imageFile": "images/beeandtea.webp",
-                    "membershipLevel": "gold"
-                }]
+            "name": "Bee & Tea",
+            "businessType": "Specialty Drinks",
+            "address": "131 Hekili St, Kailua, HI 96734",
+            "phoneNumber": "(808) 262-3808",
+            "websiteUrl": "https://www.beeandteakailua.com/",
+            "imageFile": "images/beeandtea.webp",
+            "membershipLevel": "Gold"
         },
         {
-            "member" : [
-                {
-                    "name": "Windward Ford of Hawaii",
-                    "businessType": "Auto Dealership",
-                    "address": "725 Kailua Rd, Kailua, HI 96734",
-                    "phoneNumber": "(808) 266-7000",
-                    "websiteUrl": "https://www.windwardfordhawaii.com/",
-                    "imageFile": "images/windwardford.webp",
-                    "membershipLevel": "gold"
-                }]
+            "name": "Windward Ford of Hawaii",
+            "businessType": "Auto Dealership",
+            "address": "725 Kailua Rd, Kailua, HI 96734",
+            "phoneNumber": "(808) 266-7000",
+            "websiteUrl": "https://www.windwardfordhawaii.com/",
+            "imageFile": "images/windwardford.webp",
+            "membershipLevel": "Gold"
         },
         {
-            "member" : [
-                {
-                    "name": "Hi! Keiki Playground",
-                    "businessType": "Indoor Playground",
-                    "address": "171 Hamakua Dr D, Kailua, HI 96734",
-                    "phoneNumber": "(808) 744-0460",
-                    "websiteUrl": "",
-                    "imageFile": "images/hikeiki.webp",
-                    "membershipLevel": "silver"
-                }]
+            "name": "Hi! Keiki Playground",
+            "businessType": "Indoor Playground",
+            "address": "171 Hamakua Dr D, Kailua, HI 96734",
+            "phoneNumber": "(808) 744-0460",
+            "websiteUrl": "",
+            "imageFile": "images/hikeiki.webp",
+            "membershipLevel": "Silver"
         },
         {
-            "member" : [
-                {
-                    "name": "Kailua Beach Adventures",
-                    "businessType": "Tours and Rentals",
-                    "address": "130 Kailua Rd, Kailua, HI",
-                    "phoneNumber": "808-262-2555",
-                    "websiteUrl": "kailuabeachadventures.com",
-                    "imageFile": "images/kbeachadventure.webp",
-                    "membershipLevel": "silver"
-                }]
+            "name": "Kailua Beach Adventures",
+            "businessType": "Tours and Rentals",
+            "address": "130 Kailua Rd, Kailua, HI",
+            "phoneNumber": "808-262-2555",
+            "websiteUrl": "kailuabeachadventures.com",
+            "imageFile": "images/kbeachadventures.webp",
+            "membershipLevel": "Silver"
         },
         {
-            "member" : [
-                {
-                    "name": "Cornerstone Community Chiropractic",
-                    "businessType": "Chiropracter",
-                    "address": "600 Kailua Rd. #124, Kailua, HI",
-                    "phoneNumber": "(808) 636-6996",
-                    "websiteUrl": "https://www.cornerstonecommunitychiro.com/kailua/",
-                    "imageFile": "images/cornerstonechiro.webp",
-                    "membershipLevel": "bronze"
-                }]
+            "name": "Cornerstone Community Chiropractic",
+            "businessType": "Chiropracter",
+            "address": "600 Kailua Rd. #124, Kailua, HI",
+            "phoneNumber": "(808) 636-6996",
+            "websiteUrl": "https://www.cornerstonecommunitychiro.com/kailua/",
+            "imageFile": "images/cornerstonechiro.webp",
+            "membershipLevel": "Bronze"
         },
         {
-            "member" : [
-                {
-                    "name": "Cove Child Development",
-                    "businessType": "occupational, physical, and speech therapy",
-                    "address": "130 Kailua Road, Suite 102B, Kailua, HI 96734",
-                    "phoneNumber": "(808) 400-0073",
-                    "websiteUrl": "https://www.covechilddevelopment.com/",
-                    "imageFile": "images/covechilddev.webp",
-                    "membershipLevel": "bronze"
-                }]
+            "name": "Cove Child Development",
+            "businessType": "occupational, physical, and speech therapy",
+            "address": "130 Kailua Road, Suite 102B, Kailua, HI 96734",
+            "phoneNumber": "(808) 400-0073",
+            "websiteUrl": "https://www.covechilddevelopment.com/",
+            "imageFile": "images/covechilddev.webp",
+            "membershipLevel": "Bronze"
         },
         {
-            "member" : [
-                {
-                    "name": "Hui o Ko'olaupoko",
-                    "businessType": "Ocean Protection Non-Profit",
-                    "address": "335 Hahani St. #1892 ​Kailua, HI 96734",
-                    "phoneNumber": "(808) 381-7202",
-                    "websiteUrl": "https://www.huihawaii.org/",
-                    "imageFile": "images/nonprofit",
-                    "membershipLevel": "np"
-                }]
+            "name": "Hui o Ko'olaupoko",
+            "businessType": "Ocean Protection Non-Profit",
+            "address": "335 Hahani St. #1892 ​Kailua, HI 96734",
+            "phoneNumber": "(808) 381-7202",
+            "websiteUrl": "https://www.huihawaii.org/",
+            "imageFile": "images/nonprofit.webp",
+            "membershipLevel": "Non-Profit"
         }
     ]
 }

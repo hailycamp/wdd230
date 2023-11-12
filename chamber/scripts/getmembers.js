@@ -5,8 +5,8 @@ function displayMembers(membersArray) {
     membersArray.forEach(member => {
 
         const memberCard = document.createElement('section');
-        const fullName = document.createElement('h2');
-        const subtitle = document.createElement('h3');
+        const fullName = document.createElement('h3');
+        const subtitle = document.createElement('h4');
         const photo = document.createElement('img');
         const address = document.createElement('p');
         const phoneNum = document.createElement('p');
@@ -23,7 +23,7 @@ function displayMembers(membersArray) {
         phoneNum.textContent = `Phone Number: ${member.phoneNumber}`
 
         if ((member.websiteUrl) != "") {
-            website.setAttribute('src', member.websiteUrl);
+            website.setAttribute('href', member.websiteUrl);
             website.textContent = 'Website';
         }
         else {
@@ -44,8 +44,8 @@ function displayMembers(membersArray) {
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.members); 
-    // displayMembers(data.members); 
+    // console.table(data.members); 
+    displayMembers(data.members); 
 }
 
 getMemberData();
