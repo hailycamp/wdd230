@@ -224,6 +224,10 @@ nav a {
     padding-top: 3rem;
 }
 
+#events h3 {
+    margin-top: 1.5rem;
+}
+
 /* ----- business spotlight content ----- */
 
 #spotlight {
@@ -233,7 +237,7 @@ nav a {
     padding-top: 2rem;
 }
 
-#spotlight h2, h3 {
+#spotlight h2, #spotlight h3 {
     text-align: center;
 }
 
@@ -537,8 +541,8 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #member-directory section {
@@ -556,7 +560,7 @@ textarea {
 
 }
 
-#member-directory h3, h4, p {
+#member-directory h3, #member-directory h4, #member-directoty p {
     text-align: center;
     color: white;
 }
