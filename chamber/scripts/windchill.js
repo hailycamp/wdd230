@@ -10,7 +10,6 @@
 //   })
 //   .catch(error => console.error(error));
 
-
 // extract elements from the document and assign them to variables
 
 const tempSpan = document.getElementById('temperature');
