@@ -180,3 +180,12 @@ footer {
     padding: 10px;
     display: block;
 }
+
+figure img {
+    max-width: 50px;
+}
+
+figure figcaption {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
