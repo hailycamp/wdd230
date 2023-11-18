@@ -28,10 +28,10 @@ else {
 let visitsDisplay = document.querySelector('#visits-display')
 
 if (msSinceVisit < 600) {
-	visitsDisplay.textContent = 'Welcome! Let us know if you have any questions.';
+	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 } 
 else if (msSinceVisit < (24 * 3600000)) {
-    visitsDisplay.textContent = 'Back so soon! Awesome!';
+    visitsDisplay.textContent = `Back so soon! Awesome!`;
 }
 else {
     // calculate days since last visit
