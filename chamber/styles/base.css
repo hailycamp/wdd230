@@ -263,6 +263,7 @@ footer {
 
 footer .logo {
     width: clamp(50px, 50%, 150px);
+    aspect-ratio: 1 / 1; 
 }
 
 /* dark mode button and effects */
@@ -539,20 +540,21 @@ textarea {
 #member-directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    width: 95%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    gap: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #member-directory section {
     width: 100%;
     align-items: center;
     background-color: var(--haze-blue);
-    padding: 1rem;
+    padding: 0.5rem;
     padding-bottom: 2rem;
     border: 1px solid;
     border-color: var(--dark-blue);
+    box-sizing: border-box;
 
     display: grid;
     grid-template-columns: auto;
@@ -560,7 +562,7 @@ textarea {
 
 }
 
-#member-directory h3, #member-directory h4, #member-directoty p {
+#member-directory h3, #member-directory h4, #member-directory p {
     text-align: center;
     color: white;
 }
