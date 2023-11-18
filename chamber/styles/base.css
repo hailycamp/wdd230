@@ -266,6 +266,17 @@ footer .logo {
     aspect-ratio: 1 / 1; 
 }
 
+#forecast {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+#forecast p:first-child {
+    font-weight: 600;
+}
+
 /* dark mode button and effects */
 
 .switch {
