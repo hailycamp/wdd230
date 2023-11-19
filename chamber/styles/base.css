@@ -98,6 +98,33 @@ footer p {
 /* Formatting */
 
 /* ----- general content ----- */
+
+.show-banner {
+    background-color: var(--dead-salmon);
+    color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 7rem;
+    padding-left: 3rem;
+}
+
+.closed {
+    display: none;
+    visibility: hidden;
+}
+
+#banner-close {
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
 #site { 
     overflow-x: hidden; 
 }
