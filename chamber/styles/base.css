@@ -262,9 +262,29 @@ nav a {
     margin-top: 5rem;
     padding-bottom: 5rem;
     padding-top: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
-#spotlight h2, #spotlight h3 {
+#spotlight h2 {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr repeat(auto-fill, 5rem);
+}
+
+#spotlight h3 {
     text-align: center;
 }
 
