@@ -88,7 +88,7 @@ function displayResults(data) {
 function displayForecast(dailyData) {
     forecastBlock = document.getElementById('forecast');
         
-    for (i = 0; i < 24; i++) {
+    for (i = 8; i < 32; i = i + 8) {
         const weatherDiv = document.createElement('div');
         const dtLabel = document.createElement('p');
 
@@ -115,14 +115,14 @@ function displayForecast(dailyData) {
             day = 'Saturday';
         }
         // Hours part from the timestamp
-        let hours = date.getHours();
-            if (hours > 12) {hours -= 12;}
-        dtLabel.innerText = day + ' ' + hours + ' p.m.';
+        // let hours = date.getHours();
+        //     if (hours > 12) {hours -= 12;}
+        dtLabel.innerText = day;
         weatherDiv.appendChild(dtLabel);
 
         // add the high and low temp
         const highLow = document.createElement('p');
-        highLow.innerHTML = `High: ${dailyData.list[i].main.temp_max} &deg;F | Low: ${dailyData.list[i].main.temp_min} &deg;F`;
+        highLow.innerHTML = `${dailyData.list[i].main.temp} &deg;F`;
         weatherDiv.appendChild(highLow);
 
         // add the icon and caption

@@ -1,6 +1,6 @@
 const darkBtn = document.querySelector('.switch');
 const btnTxt = document.querySelector('.darkbtn')
-const page = document.querySelector('.page');
+const page = document.querySelector('html');
 
 darkBtn.addEventListener('click', () => {
     if (btnTxt.textContent == 'Dark') {

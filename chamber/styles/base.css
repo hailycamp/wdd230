@@ -1,7 +1,7 @@
 :root {
     --base:  rgb(244, 235, 218);
     --dark-blue: #323d4f;
-    --haze-blue: #566d7c;
+    --haze-blue: #4c6372;
     --seafoam: #9eb4a7;
     --dead-salmon: #e2b094;
     --sunshine: #fff4cd;
@@ -67,19 +67,19 @@ nav a:hover, a:active {
     background-color: var(--seafoam);
 }
 
-.button a, a:visited, a:active {
-    color: var(--dark-blue);
+.button a, .button a:visited, .button a:active {
+    color: black;
 }
 
 .button a:hover {
-    color: var(--haze-blue);
-}
-
-#action-menu a, a:visited, a:active {
     color: var(--dark-blue);
 }
 
-#action-menu a:hover {
+#action-menu a, #action-menu a:visited, #action-menu a:active, #spotlight a, #spotlight a:visited, #spotlight a:active {
+    color: var(--dark-blue);
+}
+
+#action-menu a:hover, #spotlight a:hover {
     color: var(--haze-blue);
 }
 
@@ -275,6 +275,13 @@ nav a {
     margin-left: auto;
 }
 
+#spotlight p, #spotlight a {
+    max-width: 60%;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+}
+
 /* ----- footer content ----- */
 
 #weather {
@@ -294,9 +301,10 @@ footer .logo {
 }
 
 #forecast {
-    margin-top: 2rem;
+    margin: 2rem auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     overflow-x: scroll;
 }
 
@@ -335,17 +343,17 @@ footer .logo {
     margin: 0;
 }
 
+.darkbtn:hover {
+    color: var(--haze-blue);
+}
+
 .dark {
-    background-color: #1e242e;
+    background-color: var(--haze-blue);
     color: white;
-    margin-left: -3rem;
-    margin-right: -3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .dark #action-menu {
-    background-color: #1e242e;
+    background-color: var(--dark-blue);
 }
 
 .dark #action-menu .action-card a {
@@ -353,11 +361,11 @@ footer .logo {
 }
 
 .dark .event-card {
-    background-color: #1e242e;
+    background-color: var(--dark-blue);
 }
 
 .dark #spotlight {
-    background-color: #1e242e;
+    background-color: var(--dark-blue);
 }
 
 
