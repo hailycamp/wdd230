@@ -29,7 +29,7 @@ async function dailyFetch() {
         let response = await fetch(dailyURL);
         if (response.ok) {
             let dailyData = await response.json();
-        console.log(dailyData); //output for testing only
+        // console.log(dailyData); 
         displayForecast(dailyData);
         }
         else {

@@ -55,12 +55,14 @@ function displayMembers(membersArray) {
 
         spotlightSection.appendChild(memberCard);
     }
+    formatBizCard(bizOne);
+    formatBizCard(bizTwo);
 }
 
 async function getMemberData() {
     const response = await fetch(burl);
     const data = await response.json();
-    console.table(data.members); 
+    // console.table(data.members); 
     displayMembers(data.members); 
 }
 

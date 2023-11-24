@@ -284,12 +284,15 @@ nav a {
     grid-template-rows: 1fr repeat(auto-fill, 5rem);
 }
 
-#spotlight h3 {
+#spotlight h3, #spotlight h4 {
     text-align: center;
 }
 
+
+
 #spotlight img {
     width: clamp(100px, 90%, 500px);
+    height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -317,6 +320,7 @@ footer {
 
 footer .logo {
     width: clamp(50px, 50%, 150px);
+    height: auto;
     aspect-ratio: 1 / 1; 
 }
 
