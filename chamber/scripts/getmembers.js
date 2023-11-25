@@ -19,8 +19,8 @@ function displayMembers(membersArray) {
         photo.setAttribute('alt', `Photo at ${member.name}`);
         photo.setAttribute('width', '300');
         photo.setAttribute('height', '300');
-        address.textContent = `Address: ${member.address}`;
-        phoneNum.textContent = `Phone Number: ${member.phoneNumber}`
+        address.textContent = `${member.address}`;
+        phoneNum.textContent = `${member.phoneNumber}`
 
         if ((member.websiteUrl) != "") {
             website.setAttribute('href', member.websiteUrl);
