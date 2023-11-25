@@ -65,6 +65,13 @@
         background-color: var(--dark-blue);
     }
 
+    #spotlight {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -107,7 +114,29 @@
         margin: 2.5rem auto;
     }
 
+
+     /*  --------------------- weather ------------------- */
+
+
+    #forecast {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forecast div::before {
+        content: "";
+        border: 1px inset;
+        box-sizing: border-box;
+        color: var(--dark-blue);
+        display: block;
+        height: 2px;
+        width: 60%;
+        margin: 0.5em auto;
+    }
+
+
     /*  --------------------- DISCOVER PAGE ------------------- */
+
 
     #discover {
         display: flex;

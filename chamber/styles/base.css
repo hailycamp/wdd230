@@ -258,7 +258,7 @@ nav a {
 /* ----- business spotlight content ----- */
 
 #spotlight {
-    padding: 3rem;
+    padding: 10rem;
     margin-top: 5rem;
     padding-bottom: 5rem;
     padding-top: 2rem;
@@ -276,7 +276,6 @@ nav a {
 .spotlight-card {
     padding: 1rem;
     width: 100%;
-    align-items: center;
     box-sizing: border-box;
 
     display: grid;
@@ -288,10 +287,8 @@ nav a {
     text-align: center;
 }
 
-
-
 #spotlight img {
-    width: clamp(100px, 90%, 500px);
+    width: clamp(10rem, 90%, 15rem);
     height: auto;
     display: block;
     margin-right: auto;
@@ -376,23 +373,26 @@ footer .logo {
     color: white;
 }
 
-.dark #action-menu {
-    background-color: var(--dark-blue);
-}
-
 .dark #action-menu .action-card a {
     color: white;
 }
 
-.dark .event-card {
+.dark #action-menu,
+.dark .event-card, 
+.dark #spotlight,
+.dark #membership-benefits,
+.dark #member-directory section,
+.dark .sidebar div {
     background-color: var(--dark-blue);
+    color: white;
 }
 
-.dark #spotlight {
-    background-color: var(--dark-blue);
+.dark #member-directory section h3,
+.dark #member-directory section h4,
+.dark #member-directory section p,
+.dark #member-directory section a {
+    color: white;
 }
-
-
   
 /* less than 1345px is where it starts needing new  */
 
@@ -460,11 +460,13 @@ footer .logo {
 }
 
 .sidebar div {
-    border: #323d4f;
-    border-radius: 0.5rem;
-    border-style: solid;
-    border-width: 1px;
+    border: none;
+    background-color: var(--seafoam);
+    color: black;
+    border-radius: 0.25rem;
+    border-style: none;
     margin: 0.5rem;
+    margin-top: 1.2rem;
     padding: 1rem;
 }
 
@@ -619,11 +621,11 @@ textarea {
 #member-directory section {
     width: 100%;
     align-items: center;
-    background-color: var(--haze-blue);
+    background-color: var(--seafoam);
     padding: 0.5rem;
     padding-bottom: 2rem;
-    border: 1px solid;
-    border-color: var(--dark-blue);
+    border: none;
+    border-radius: 0.25rem;
     box-sizing: border-box;
 
     display: grid;
@@ -634,7 +636,7 @@ textarea {
 
 #member-directory h3, #member-directory h4, #member-directory p {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #member-directory h4 {
@@ -646,7 +648,7 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: black;
     text-align: center;
 }
 

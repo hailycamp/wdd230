@@ -41,8 +41,8 @@
         {
             "name": "Kailua Beach Adventures",
             "businessType": "Tours and Rentals",
-            "address": "130 Kailua Rd, Kailua, HI",
-            "phoneNumber": "808-262-2555",
+            "address": "130 Kailua Rd, Kailua, HI 96734",
+            "phoneNumber": "(808) 262-2555",
             "websiteUrl": "kailuabeachadventures.com",
             "imageFile": "images/kbeachadventures.webp",
             "membershipLevel": "Silver"
