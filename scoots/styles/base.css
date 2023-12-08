@@ -1,7 +1,7 @@
 :root {
     --base: #FDF5ED;
     --tangerine: #F38B53;
-    --pistachio: #a7e6de;
+    --pistachio: #ddeeec;
     --accent: #9C0D38;
 
     --headings: 'Montserrat', sans-serif; 
@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
@@ -188,7 +189,7 @@ footer div p:first-child {
     display: flex;
     flex-direction: column;
     width: clamp(280px, 50%, 600px);
-    gap: 2.5rem;
+    gap: 3rem;
 
     margin: 3rem auto;
 }
@@ -199,9 +200,9 @@ footer div p:first-child {
 
 .ride-sum-block {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: 15% 85%;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .ride-sum-block h3 {
@@ -209,6 +210,7 @@ footer div p:first-child {
     grid-row: 1 / 2;
     font-size: 1.2rem;
     margin: 0;
+    text-align: right;
 }
 
 .ride-sum-block h4 {
@@ -216,6 +218,13 @@ footer div p:first-child {
     grid-row: 1 / 2;
     font-size: 1.2rem;
     margin: 0;
+}
+
+.ride-sum-block img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
 }
 
 .ride-sum-block p {
@@ -248,3 +257,31 @@ footer div p:first-child {
 
 /* rentals page */
 
+.comparison-chart {
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.comparison-chart table {
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.comparison-chart table th, .comparison-chart table td {
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.comparison-chart table tbody tr:nth-child(odd) {
+    background-color: var(--pistachio);
+}
+
+.comparison-chart table caption {
+    caption-side: bottom;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
