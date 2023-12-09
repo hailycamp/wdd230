@@ -348,3 +348,9 @@ footer div p:first-child {
     content: "*";
     color: rgb(243, 121, 121);
 }
+
+/* contact page */
+
+#contact .contact-info {
+    text-align: center;
+}
