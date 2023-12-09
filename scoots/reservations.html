@@ -32,11 +32,108 @@
             <a href="reservations.html">Book Now</a>
         </div>
     </header>
-    <main>
-        <div>
-            <h1>Heading</h1>
-            <p>Sample content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis recusandae qui aliquam alias doloremque. Dolor expedita numquam id consequuntur eius. Impedit earum veniam ad temporibus eveniet possimus qui animi sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, unde molestias deserunt magni maxime amet eum vitae nostrum maiores enim sunt, facere quo? Aut natus veritatis accusantium molestias illum voluptatem.</p>
-        </div>
+    <main id="reservations">
+        <h1>Reservations</h1>
+        <section class="text-block">
+            <h2>Aggreement Information</h2>
+            <h3>What's Included</h3>
+            <ul>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance.</li>
+                <li>Rentals may be returned to either physical location.</li>
+                <li>Damage insurance available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            </ul>
+            <h3>Policies & Disclaimers</h3>
+            <ul>
+                <li>Fuel charge is NOT included.</li>
+                <li>Payments are made via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            </ul>
+            <p>By placing a reservation, you agree to ALL terms and conditions.</p>
+        </section>
+        <section class="form">
+            <form action="record.html" method="get">
+                <!-- first name -->
+                <div>
+                    <label for="startdate" class="required">Reservation Start Date:</label>
+                    <input type="date" id="startdate" name="startdate" min="2023-12-12">   
+                </div>
+                <div>
+                    <label for="period" class="required">Days You'll be Renting For: <span id="rangevalue">0.5</span></label>
+                    <br>
+                    <input id="period" type="range" name="period" min="0.5" max="10" step="0.5" value="0.5">
+                </div>
+                <div>
+                    <p class="required">Select Rental Vehicle: </p>
+                    <input id="metro" name="vehicle" type="radio" value="Honda Metropolitan">
+                    <label for="metro">Honda Metropolitan Scooter</label><br>
+
+                    <input id="dio" name="vehicle" type="radio" value="Honda Dio">
+                    <label for="dio">Honda Dio Scooter</label><br>
+
+                    <input id="pcx" name="vehicle" type="radio" value="Honda PCX150">
+                    <label for="pcx">Honda PCX150 Scooter</label><br>
+
+                    <input id="pioneer" name="vehicle" type="radio" value="Honda Pioneer">
+                    <label for="pioneer">Honda Pioneer ATV</label><br>
+
+                    <input id="wrangleropen" name="vehicle" type="radio" value="Jeep Wrangler 2 Door">
+                    <label for="wrangleropen">Jeep Wrangler - 2 Door Open Air</label><br>
+
+                    <input id="wrangler" name="vehicle" type="radio" value="Jeep Wrangler 4 Door">
+                    <label for="wrangler">Jeep Wrangler - 4 Door with A/C</label><br>
+                </div>
+                <!-- first name -->
+                <div>
+                    <label for="fname" class="required">First Name: </label><br>
+                    <input id="fname" name="fname" type="text" required>
+                </div>
+                <br>
+                <!-- last name -->
+                <div>
+                    <label for="lname" class="required">Last Name: </label><br>
+                    <input id="lname" name="lname" type="text" required>
+                </div>
+                <br>
+                <!-- email address -->
+                <div>
+                    <label for="email" class="required">Email Address: </label><br>
+                    <input id="email" name="email" type="email" required placeholder="username@domain.com">
+                </div>
+                <br>
+                <!-- phone number -->
+                <div>
+                    <label for="phone" class="required">Phone Number: </label><br>
+                    <input id="phone" name="phone" type="tel" required>
+                </div>
+                <br>
+                <!-- cruise line -->
+                <div>
+                    <label for="cruiseline">Cruise Line (if applicable): </label><br>
+                    <input id="cruiseline" name="cruiseline" type="text">
+                </div>
+                <br>
+                <!-- cruise line -->
+                <div>
+                    <label for="homestate">Home Country or State: </label><br>
+                    <input id="homestate" name="homestate" type="text">
+                </div>
+                <br>   
+                <!-- special accomodations -->
+                <div>
+                    <label for="description">Special Accomodations: </label>
+                    <br>
+                    <textarea id="description" name="description" maxlength="200"  placeholder="A brief description of special accomodations you wish to request..."></textarea>
+                </div>                    
+                <!-- submission button -->
+                <div class="button">
+                    <a id="submission" type="submit">Place Reservation</a>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <div>
@@ -51,5 +148,6 @@
             <a href="https://www.twitter.com"><img alt="twitter logo" src="images/twitter.webp"></a>
         </div>
     </footer>
+    <script src="scripts/formvalidator.js"></script>
 </body>
 </html>
