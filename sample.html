@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="link to google font">
+        <link rel="stylesheet" href="styles/base.css">
+        <style>
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div img {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam, vel, culpa maxime explicabo doloremque dignissimos error, porro eum doloribus quidem quo nobis odit consectetur? Excepturi earum quod exercitationem natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quos quae labore sit quam quis dolorum nisi, minima quod saepe consequuntur at. Omnis, atque nulla magnam tempora saepe adipisci architecto!</p>
+            <img>
+        </div>
+        <picture>
+            <source srcset="images/logo.webp" media="(min-width: 1000px)">
+            <source srcset="images/logo.webp" media="(min-width: 700px)">
+            <img alt="" srcset="images/logo.webp" width="300" height="200">
+        </picture>
+    <script>
+        localStorage.setItem('name', 'pablo');
+        localStorage.getItem('name');
+    </script>
+    </body>
+</html>
+

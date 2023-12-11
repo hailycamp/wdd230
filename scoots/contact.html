@@ -34,6 +34,37 @@
     </header>
     <main id="contact">
         <h1>Contact Us</h1>
+        <section class="form">
+            <h2>Send Us a Message</h2>
+            <form action="sendmsg.html" method="get">
+                <!-- name -->
+                <div>
+                    <label for="name" class="required">Name: </label><br>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <br>
+                <!-- email address -->
+                <div>
+                    <label for="email" class="required">Email Address: </label><br>
+                    <input id="email" name="email" type="email" required placeholder="username@domain.com">
+                </div>
+                <br>
+                <!-- message to scoots -->
+                <div>
+                    <label for="message">Message: </label>
+                    <br>
+                    <textarea id="message" name="message" maxlength="400"></textarea>
+                </div>  
+                <br>                  
+                <!-- send message button -->
+                <div>
+                    <button id="send" type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1JZqBAabxtQzZFOS4DL-C5b_JoOQlmTo&ehbc=2E312F&noprof=1" loading="lazy" allowfullscreen=""></iframe>
+        </div>
         <section class="contact-info">
             <h2>Contact Info</h2>
             <h3>Phone Number</h3>
