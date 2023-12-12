@@ -1,0 +1,52 @@
+{
+    "vehicles" : [
+        {
+            "name" : "Honda Metropolitan Scooter",
+            "capacity" : "1",
+            "halfDayPrice" : "$20",
+            "fullDayPrice" : "$30",
+            "halfDayPriceWalkIn" : "$25",
+            "fullDayPriceWalkIn" : "$35"
+        },
+        {
+            "name" : "Honda Dio Scooter",
+            "capacity" : "2",
+            "halfDayPrice" : "$30",
+            "fullDayPrice" : "$40",
+            "halfDayPriceWalkIn" : "$35",
+            "fullDayPriceWalkIn" : "$45"
+        },
+        {
+            "name" : "Honda PCX150 Scooter",
+            "capacity" : "2",
+            "halfDayPrice" : "$40",
+            "fullDayPrice" : "$50",
+            "halfDayPriceWalkIn" : "$45",
+            "fullDayPriceWalkIn" : "$55"
+        },
+        {
+            "name" : "Honda Pioneer 1000 ATV",
+            "capacity" : "4",
+            "halfDayPrice" : "$50",
+            "fullDayPrice" : "$70",
+            "halfDayPriceWalkIn" : "$60",
+            "fullDayPriceWalkIn" : "$80"
+        },
+        {
+            "name" : "Jeep Wrangler 4 Door with A/C",
+            "capacity" : "5",
+            "halfDayPrice" : "$70",
+            "fullDayPrice" : "$100",
+            "halfDayPriceWalkIn" : "$85",
+            "fullDayPriceWalkIn" : "$125"
+        },
+        {
+            "name" : "Jeep Wrangler 2 Door Open Air",
+            "capacity" : "4",
+            "halfDayPrice" : "$60",
+            "fullDayPrice" : "$85",
+            "halfDayPriceWalkIn" : "$70",
+            "fullDayPriceWalkIn" : "$80"
+        }
+    ]
+}
