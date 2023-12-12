@@ -26,7 +26,7 @@
         },
         {
             "name" : "Honda Pioneer 1000 ATV",
-            "capacity" : "4",
+            "capacity" : "3",
             "halfDayPrice" : "$50",
             "fullDayPrice" : "$70",
             "halfDayPriceWalkIn" : "$60",

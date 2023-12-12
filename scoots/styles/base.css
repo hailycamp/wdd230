@@ -147,7 +147,7 @@ footer {
     align-items: center;
 }
 
-footer div, #copyright {
+footer div {
     width: 33%;
 }
 
@@ -155,8 +155,17 @@ footer div p:first-child {
     font-weight: 500;
 }
 
-#copyright {
+#copyright, .attribution-link {
     text-align: center;
+    color: black;
+}
+
+.attribution-link:visited, .attribution-link:active {
+    color: black;
+}
+
+.attribution-link:hover {
+    color: rgb(62, 62, 62);
 }
 
 #socials {
@@ -395,12 +404,16 @@ textarea {
     color: rgb(243, 121, 121);
 }
 
-/* thank you page */
+/* thank you & attributions pages */
 
 #thankyou p {
     text-align: center;
     font-size: 1.25rem;
     padding: 3rem;
+}
+
+#attributions {
+    padding: 0 3rem 3rem;
 }
 
 /* contact page */
