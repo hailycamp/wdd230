@@ -92,6 +92,31 @@ button {
     height: auto;
 }
 
+/* banner */
+
+.show-banner {
+    background-color: var(--pistachio);
+    color: black;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0.5rem 2rem;
+}
+
+.closed {
+    display: none;
+    visibility: hidden;
+}
+
+#banner-close {
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
 /* header */
 
 header {

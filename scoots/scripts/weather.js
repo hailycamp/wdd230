@@ -1,28 +1,7 @@
 // get weather data from OpenWeatherMap API
 
-// const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&appid=41e39c6822b08a51e8ed1380a679393d&units=imperial';
 const dailyURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.95&appid=41e39c6822b08a51e8ed1380a679393d&units=imperial';
 
-
-
-// async function apiFetch() {
-//     try {
-//         let response = await fetch(url);
-//         if (response.ok) {
-//             let data = await response.json();
-//         // console.log(data); //output for testing only
-//         displayResults(data);
-//         }
-//         else {
-//             throw Error(await response.text());
-//         }
-//     }
-//     catch(error) {
-//         console.log(error);
-//     }
-// }
-
-// apiFetch();
 
 async function dailyFetch() {
     try {
