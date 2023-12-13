@@ -31,6 +31,9 @@
         <div class="button">
             <a href="reservations.html">Book Now</a>
         </div>
+        <div class="ham-button">
+            <div class="bar"></div>
+        </div>
     </header>
     <main>
         <h1>Rentals</h1>
@@ -74,25 +77,28 @@
             </div>
         </section>
         <section class="comparison-chart">
-            <table>
-                <caption>Rental Feature & Price Comparison</caption>
-                <thead>
-                    <tr>
-                        <th colspan="6" scope="colgroup">Rental Comparison</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Vehicle</th>
-                        <th scope="col">Capacity</th>
-                        <th scope="col">1 Day with Reservation</th>
-                        <th scope="col">1/2 Day with Reservation</th>
-                        <th scope="col">1 Day with Walk-In</th>
-                        <th scope="col">1/2 Day with Walk-In</th>
-                    </tr>
-                </thead>
-                <tbody id="vehicle-data-table">
-                    
-                </tbody>
-            </table>
+            <h2>Comparing Vehicles</h2>
+            <div class="table-container">
+                <table>
+                    <caption>Rental Feature & Price Comparison</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="6" scope="colgroup">Rental Comparison</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Vehicle</th>
+                            <th scope="col">Capacity</th>
+                            <th scope="col">1 Day with Reservation</th>
+                            <th scope="col">1/2 Day with Reservation</th>
+                            <th scope="col">1 Day with Walk-In</th>
+                            <th scope="col">1/2 Day with Walk-In</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vehicle-data-table">
+                        
+                    </tbody>
+                </table>
+            </div>
         </section>
         <script src="scripts/getvehicledata.js"></script>
     </main>
@@ -112,5 +118,6 @@
             <a href="https://www.twitter.com"><img alt="twitter logo" src="images/twitter.webp"></a>
         </div>
     </footer>
+    <script src="scripts/mobilemenu.js"></script>
 </body>
 </html>
