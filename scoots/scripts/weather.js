@@ -22,26 +22,6 @@ async function dailyFetch() {
 
 dailyFetch();
 
-// extract elements from the document and assign them to variables
-
-// const weatherIcon = document.getElementById('icon');
-// const captionDesc = document.getElementById('iconcap');
-// const weatherIcon2 = document.getElementById('icon2');
-// const captionDesc2 = document.getElementById('iconcap2');
-// const tempSpan = document.getElementById('temperature');
-
-// function displayResults(data) {
-//     tempSpan.innerHTML = `${data.main.temp} &deg;F`;
-//     currTemp = data.main.temp;
-//     const iconsrc = `https://api.openweathermap.org/img/w/${data.weather[0].icon}.png`;
-//     let desc = data.weather[0].description;
-//     weatherIcon.setAttribute('src', iconsrc);
-//     weatherIcon.setAttribute('alt', desc);
-//     captionDesc.textContent = `${desc}`;
-
-//     tempSpan.innerText = currTemp;
-// }
-
 
 function displayForecast(dailyData) {
     forecastBlock = document.getElementById('weather');
