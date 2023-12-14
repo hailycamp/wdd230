@@ -259,6 +259,7 @@ footer div p:first-child {
     gap: 3rem;
 
     margin: 3rem auto;
+    
 }
 
 .ride-sum h2 {
@@ -502,11 +503,17 @@ textarea {
 @media screen and (max-width: 1000px) {
 
     .ride-sum {
-        width: 85%;
+        width: 60%;
+        margin: auto;
     }
 
     .ride-sum-block {
         grid-template-columns: 40% 60%;
+    }
+
+    #home-page .ride-sum-block {
+        position: relative;
+        right: 2rem;
     }
 
 }
@@ -635,6 +642,16 @@ textarea {
         width: 100%; 
     }
 
+    #contact {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    #contact .map iframe {
+        min-height: 20rem;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -657,6 +674,10 @@ textarea {
     .ride-sum-block {
         display: flex;
         flex-direction: column;
+    }
+
+    #home-page .ride-sum-block {
+        position: static;
     }
 
     .ride-sum-block h3::before {
@@ -684,12 +705,6 @@ textarea {
     }
 
     #reservations {
-        padding: 1.5rem;
-    }
-
-    #contact {
-        display: flex;
-        flex-direction: column;
         padding: 1.5rem;
     }
 

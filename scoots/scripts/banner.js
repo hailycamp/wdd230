@@ -6,14 +6,12 @@ const bannerX = document.querySelector('#banner-close');
 
 
 bannerX.addEventListener('click', function() {
-    console.log('running function 2');
     bannerElement.classList.add('closed');
     bannerElement.classList.remove('show-banner');
 });
 
 
 function insertBanner(data) {
-    console.log('running function 1');
     bannerPara.innerHTML = `The High Today is ${data.main.temp_max} &deg;F`;
     bannerX.innerHTML = '×';
     bannerElement.classList.add('show-banner');
@@ -25,7 +23,7 @@ async function apiFetch() {
         let response = await fetch(url);
         if (response.ok) {
             let data = await response.json();
-        console.log(data); //output for testing only
+        // console.log(data); //output for testing only
         insertBanner(data);
         }
         else {
